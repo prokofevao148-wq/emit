@@ -1,0 +1,528 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #111;
+    color: #eee;
+    line-height: 1.5;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* =========================
+        HEADER
+========================= */
+
+header {
+    height: 100px; /* Чуть выше для большого лого */
+    background: rgba(8, 8, 8, 0.95);
+    border-bottom: 1px solid #333;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 6%;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    backdrop-filter: blur(5px);
+}
+
+.logo img {
+    height: 90px; /* УВЕЛИЧЕННЫЙ ЛОГОТИП */
+    width: auto;
+}
+
+nav {
+    display: flex;
+    gap: 25px;
+}
+
+nav a {
+    color: #bbb;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #ff8500;
+}
+
+.header-actions {
+    display: flex;
+    gap: 10px;
+}
+
+.header-actions a {
+    padding: 10px 20px;
+    border-radius: 12px; /* ЗАКРУГЛЕНИЕ */
+    border: 1px solid #444;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.header-actions .max {
+    background: #ff8500;
+    color: white;
+    border: none;
+}
+
+.header-actions .max:hover {
+    background: #e07400;
+}
+
+.header-actions .phone {
+    background: #222;
+}
+
+/* =========================
+        HERO
+========================= */
+
+.hero {
+    min-height: 650px;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+    background: linear-gradient(90deg, rgba(0, 0, 0, .9), rgba(0, 0, 0, .45)), url("images/garage.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-content {
+    max-width: 650px;
+}
+
+.hero h1 {
+    font-size: 90px;
+    letter-spacing: 8px;
+    color: #ff8500;
+}
+
+.hero h2 {
+    font-size: 38px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 22px;
+    color: #ccc;
+    margin-bottom: 25px;
+}
+
+.hero-price {
+    display: inline-block;
+    background: #ff8500;
+    color: white;
+    padding: 15px 30px;
+    font-size: 35px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    border-radius: 12px; /* ЗАКРУГЛЕНИЕ */
+}
+
+.buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.buttons a {
+    padding: 15px 30px;
+    background: #ff8500;
+    border-radius: 12px; /* ЗАКРУГЛЕНИЕ */
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.buttons a:hover {
+    transform: translateY(-2px);
+}
+
+.buttons a:last-child {
+    background: #222;
+    border: 1px solid #555;
+}
+
+/* =========================
+        FEATURES
+========================= */
+
+.features {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    background: #181818;
+    padding: 40px 8%;
+}
+
+.features div {
+    padding: 25px;
+    border-left: 4px solid #ff8500;
+    background: #111;
+    border-radius: 0 12px 12px 0; /* ЗАКРУГЛЕНИЕ СПРАВА */
+}
+
+.features h3 {
+    color: #ff8500;
+    margin-bottom: 10px;
+}
+
+/* =========================
+        SECTIONS
+========================= */
+
+section {
+    padding: 70px 8%;
+}
+
+section h2 {
+    font-size: 36px;
+    margin-bottom: 25px;
+}
+
+.subtitle {
+    color: #aaa;
+    margin-bottom: 35px;
+}
+
+/* =========================
+        SALE
+========================= */
+
+.sale {
+    background: #e87500;
+    text-align: center;
+    padding: 45px;
+    border-radius: 0; /* Можно добавить 20px если хотите скруглить весь блок */
+}
+
+.sale h2 {
+    color: white;
+    font-size: 40px;
+}
+
+.sale h3 {
+    font-size: 32px;
+    margin: 10px;
+}
+
+/* =========================
+        SERVICE CARDS
+========================= */
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Адаптивная сетка */
+    gap: 25px;
+}
+
+.card {
+    background: #1b1b1b;
+    border: 1px solid #333;
+    padding: 30px;
+    min-height: 200px;
+    border-radius: 16px; /* ЗАКРУГЛЕНИЕ КАРТОЧЕК */
+    transition: 0.3s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card:hover {
+    border-color: #ff8500;
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+.card h3 {
+    color: #ff8500;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.card strong {
+    display: block;
+    margin-top: 20px;
+    font-size: 22px;
+}
+
+.highlight-card {
+    border-color: #ff8500;
+    background: #221a11;
+}
+
+/* =========================
+        EXCAVATOR & EVACUATOR
+========================= */
+
+.excavator, .evacuation-section {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    background: #151515;
+    border-radius: 20px; /* ЗАКРУГЛЕНИЕ СЕКЦИИ */
+    margin: 20px 0;
+    overflow: hidden;
+}
+
+.evactuation-section {
+    background: #1a1515; /* Чуть другой оттенок для эвакуатора */
+}
+
+.excavator img, .evacuation-section img {
+    width: 45%;
+    border-radius: 0; /* Картинка внутри уже обрезана контейнером */
+    object-fit: cover;
+    height: 100%;
+    min-height: 400px;
+}
+
+.excavator h3, .evacuation-section h3 {
+    color: #ff8500;
+    font-size: 40px;
+    margin: 20px 0;
+}
+
+.excavator li, .evacuation-section li {
+    margin: 12px 0;
+    font-size: 18px;
+    list-style: none;
+    position: relative;
+    padding-left: 20px;
+}
+
+.excavator li::before, .evacuation-section li::before {
+    content: "•";
+    color: #ff8500;
+    position: absolute;
+    left: 0;
+    font-weight: bold;
+}
+
+/* =========================
+        WORKS
+========================= */
+
+.work {
+    background: #191919;
+    padding: 25px;
+    margin: 25px 0;
+    border-left: 5px solid #ff8500;
+    border-radius: 0 12px 12px 0;
+}
+
+.work h3 {
+    color: #ff8500;
+    margin-bottom: 15px;
+}
+
+/* =========================
+        FORM
+========================= */
+
+#order {
+    background: #0d0d0d;
+}
+
+#form {
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#form input,
+#form select,
+#form textarea {
+    background: #1d1d1d;
+    border: 1px solid #444;
+    padding: 15px;
+    color: white;
+    font-size: 16px;
+    border-radius: 12px; /* ЗАКРУГЛЕНИЕ ПОЛЕЙ */
+    outline: none;
+}
+
+#form input:focus,
+#form select:focus,
+#form textarea:focus {
+    border-color: #ff8500;
+}
+
+#form textarea {
+    height: 130px;
+    resize: vertical;
+}
+
+#form button {
+    background: #ff8500;
+    border: none;
+    padding: 17px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 12px; /* ЗАКРУГЛЕНИЕ КНОПКИ */
+    transition: 0.3s;
+}
+
+#form button:hover {
+    background: #e07400;
+}
+
+/* =========================
+        GALLERY
+========================= */
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.gallery-grid img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 12px; /* ЗАКРУГЛЕНИЕ ФОТО */
+    border: 1px solid #333;
+    transition: 0.3s;
+}
+
+.gallery-grid img:hover {
+    transform: scale(1.02);
+}
+
+/* =========================
+        CONTACTS
+========================= */
+
+#contacts {
+    background: #151515;
+    border-radius: 20px 20px 0 0;
+}
+
+#contacts h3 {
+    color: #ff8500;
+    font-size: 35px;
+    margin: 20px 0;
+}
+
+.contact-buttons {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.contact-buttons a {
+    background: #ff8500;
+    padding: 15px 25px;
+    border-radius: 12px; /* ЗАКРУГЛЕНИЕ */
+    transition: 0.3s;
+}
+
+.contact-buttons a:hover {
+    background: #e07400;
+}
+
+/* =========================
+        FLOAT MAX
+========================= */
+
+.floating-max {
+    position: fixed;
+    right: 25px;
+    bottom: 25px;
+    background: #ff8500;
+    padding: 18px 25px;
+    border-radius: 30px;
+    font-weight: bold;
+    box-shadow: 0 5px 20px #000;
+    z-index: 50;
+    transition: 0.3s;
+}
+
+.floating-max:hover {
+    transform: scale(1.1);
+}
+
+/* =========================
+        FOOTER
+========================= */
+
+footer {
+    background: #050505;
+    color: #777;
+    text-align: center;
+    padding: 30px;
+}
+
+/* =========================
+        MOBILE
+========================= */
+
+@media(max-width: 1000px) {
+    header {
+        padding: 0 20px;
+        height: 80px;
+    }
+
+    .logo img {
+        height: 60px; /* Уменьшаем на мобильном, но все равно крупно */
+    }
+
+    nav {
+        display: none;
+    }
+
+    .header-actions .map {
+        display: none;
+    }
+
+    .hero {
+        padding: 40px 25px;
+    }
+
+    .hero h1 {
+        font-size: 60px;
+    }
+
+    .hero h2 {
+        font-size: 30px;
+    }
+
+    .features {
+        grid-template-columns: 1fr;
+    }
+
+    .excavator, .evacuation-section {
+        flex-direction: column;
+    }
+
+    .excavator img, .evacuation-section img {
+        width: 100%;
+        min-height: auto;
+    }
+
+    section {
+        padding: 50px 25px;
+    }
+
+    .buttons {
+        flex-direction: column;
+    }
+
+    .contact-buttons {
+        flex-direction: column;
+    }
+}
