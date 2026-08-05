@@ -1,4 +1,3 @@
-
 * {
     margin: 0;
     padding: 0;
@@ -26,7 +25,7 @@ a {
 ========================= */
 
 header {
-    height: 100px; /* Чуть выше для большого лого */
+    height: 100px;
     background: rgba(8, 8, 8, 0.95);
     border-bottom: 1px solid #333;
     display: flex;
@@ -40,7 +39,7 @@ header {
 }
 
 .logo img {
-    height: 90px; /* УВЕЛИЧЕННЫЙ ЛОГОТИП */
+    height: 90px;
     width: auto;
 }
 
@@ -66,7 +65,7 @@ nav a:hover {
 
 .header-actions a {
     padding: 10px 20px;
-    border-radius: 12px; /* ЗАКРУГЛЕНИЕ */
+    border-radius: 12px;
     border: 1px solid #444;
     font-size: 14px;
     transition: 0.3s;
@@ -129,7 +128,7 @@ nav a:hover {
     font-size: 35px;
     font-weight: bold;
     margin-bottom: 30px;
-    border-radius: 12px; /* ЗАКРУГЛЕНИЕ */
+    border-radius: 12px;
 }
 
 .buttons {
@@ -140,7 +139,7 @@ nav a:hover {
 .buttons a {
     padding: 15px 30px;
     background: #ff8500;
-    border-radius: 12px; /* ЗАКРУГЛЕНИЕ */
+    border-radius: 12px;
     font-weight: bold;
     transition: 0.3s;
 }
@@ -170,7 +169,7 @@ nav a:hover {
     padding: 25px;
     border-left: 4px solid #ff8500;
     background: #111;
-    border-radius: 0 12px 12px 0; /* ЗАКРУГЛЕНИЕ СПРАВА */
+    border-radius: 0 12px 12px 0;
 }
 
 .features h3 {
@@ -204,7 +203,7 @@ section h2 {
     background: #e87500;
     text-align: center;
     padding: 45px;
-    border-radius: 0; /* Можно добавить 20px если хотите скруглить весь блок */
+    border-radius: 0;
 }
 
 .sale h2 {
@@ -223,7 +222,7 @@ section h2 {
 
 .cards {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Адаптивная сетка */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 25px;
 }
 
@@ -232,7 +231,7 @@ section h2 {
     border: 1px solid #333;
     padding: 30px;
     min-height: 200px;
-    border-radius: 16px; /* ЗАКРУГЛЕНИЕ КАРТОЧЕК */
+    border-radius: 16px;
     transition: 0.3s;
     display: flex;
     flex-direction: column;
@@ -271,18 +270,18 @@ section h2 {
     align-items: center;
     gap: 50px;
     background: #151515;
-    border-radius: 20px; /* ЗАКРУГЛЕНИЕ СЕКЦИИ */
+    border-radius: 20px;
     margin: 20px 0;
     overflow: hidden;
 }
 
-.evactuation-section {
-    background: #1a1515; /* Чуть другой оттенок для эвакуатора */
+.evacuation-section {
+    background: #1a1515;
 }
 
 .excavator img, .evacuation-section img {
     width: 45%;
-    border-radius: 0; /* Картинка внутри уже обрезана контейнером */
+    border-radius: 0;
     object-fit: cover;
     height: 100%;
     min-height: 400px;
@@ -350,7 +349,7 @@ section h2 {
     padding: 15px;
     color: white;
     font-size: 16px;
-    border-radius: 12px; /* ЗАКРУГЛЕНИЕ ПОЛЕЙ */
+    border-radius: 12px;
     outline: none;
 }
 
@@ -372,7 +371,7 @@ section h2 {
     font-size: 18px;
     font-weight: bold;
     cursor: pointer;
-    border-radius: 12px; /* ЗАКРУГЛЕНИЕ КНОПКИ */
+    border-radius: 12px;
     transition: 0.3s;
 }
 
@@ -394,7 +393,7 @@ section h2 {
     width: 100%;
     height: 300px;
     object-fit: cover;
-    border-radius: 12px; /* ЗАКРУГЛЕНИЕ ФОТО */
+    border-radius: 12px;
     border: 1px solid #333;
     transition: 0.3s;
 }
@@ -427,7 +426,7 @@ section h2 {
 .contact-buttons a {
     background: #ff8500;
     padding: 15px 25px;
-    border-radius: 12px; /* ЗАКРУГЛЕНИЕ */
+    border-radius: 12px;
     transition: 0.3s;
 }
 
@@ -478,7 +477,7 @@ footer {
     }
 
     .logo img {
-        height: 60px; /* Уменьшаем на мобильном, но все равно крупно */
+        height: 60px;
     }
 
     nav {
