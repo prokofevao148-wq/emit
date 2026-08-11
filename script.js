@@ -51,7 +51,7 @@ ${comment || "Без комментария"}`; // Если комментари
 // Плавное появление элементов
 // ===============================
 
-const elements = document.querySelectorAll(".card, .work, .features div");
+const elements = document.querySelectorAll(".card, .work, .features div, .protection-card, .tyres-card");
 
 const observer = new IntersectionObserver(
     (entries) => {
