@@ -365,6 +365,62 @@ section h2 {
     line-height: 1.5;
     margin-bottom: 20px;
 }
+
+.protection-card {
+    margin-top: 35px;
+    background: linear-gradient(135deg, #1b1b1b 0%, #221a11 100%);
+    border: 1px solid #ff8500;
+    border-radius: 16px;
+    padding: 40px;
+    position: relative;
+    overflow: hidden;
+}
+
+.protection-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 6px;
+    height: 100%;
+    background: #ff8500;
+}
+
+.protection-info h3 {
+    color: #ff8500;
+    font-size: 28px;
+    margin-bottom: 18px;
+}
+
+.protection-info p {
+    color: #ccc;
+    font-size: 16px;
+    line-height: 1.7;
+    margin-bottom: 25px;
+    max-width: 900px;
+}
+
+.protection-price {
+    display: inline-flex;
+    align-items: center;
+    gap: 15px;
+    background: #ff8500;
+    padding: 12px 25px;
+    border-radius: 12px;
+}
+
+.protection-price span {
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.protection-price strong {
+    color: white;
+    font-size: 26px;
+}
+
 /* =========================
         TYRES
 ========================= */
@@ -616,33 +672,57 @@ footer {
         flex-direction: column;
     }
 
+    .part-card img {
+        height: 220px;
+        min-height: 220px;
+    }
+
     .protection-card {
-        padding: 30px 25px;
+        margin-top: 30px;
+        padding: 28px 22px;
+        border-radius: 14px;
     }
 
     .protection-info h3 {
         font-size: 24px;
     }
 
+    .protection-info p {
+        font-size: 15px;
+    }
+
     .protection-price {
+        display: flex;
         flex-direction: column;
         align-items: flex-start;
-        gap: 8px;
-        padding: 15px 20px;
+        gap: 6px;
+        padding: 14px 20px;
     }
 
     .protection-price strong {
-        font-size: 24px;
+        font-size: 26px;
     }
 
     .tyres-card {
         flex-direction: column;
-        align-items: flex-start;
-        gap: 15px;
-        padding: 25px;
+        align-items: stretch;
+        gap: 18px;
+        padding: 25px 22px;
+        border-radius: 14px;
+        border-left: 4px solid #ff8500;
+    }
+
+    .tyres-info p {
+        font-size: 15px;
     }
 
     .tyres-price {
         text-align: left;
+        border-top: 1px solid #333;
+        padding-top: 15px;
+    }
+
+    .tyres-price strong {
+        font-size: 30px;
     }
 }
